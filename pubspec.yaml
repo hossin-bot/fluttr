@@ -1,0 +1,186 @@
+name: kamino
+description: The ApolloTV app for iOS and Android.
+
+# Version Code Format:
+#  [Human Readable Version]+[MMIIRRT]
+
+#  M => Major (xx)
+#  I => Minor (xx)
+#  R => Release (xx)
+#  T => Type (0 => Prerelease, 1 => Beta, 2 => Release Candidate, 3 => Stable)
+version: 1.4.7+104073
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  # Core dependencies
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+  rxdart: ^0.18.1
+
+  # App dependencies
+  cplayer:
+    path: "cplayer"
+
+  auto_size_text: ^0.2.1
+  http: ^0.12.0
+  package_info: ^0.4.0+4
+  uni_links: ^0.2.0
+  shared_preferences: ^0.5.3+1
+  intl: ^0.15.8
+  w_transport: ^3.2.8
+  path_provider: ^0.5.0+1
+  flutter_rating: ^0.0.2
+  flutter_parallax: ^0.1.2
+  logging: ^0.11.3+2
+  dbcrypt: ^1.0.0
+  flutter_material_color_picker: ^1.0.0
+  url_launcher: ^5.0.3
+  objectdb: ^1.0.7
+  flutter_webview_plugin: ^0.3.5
+  cached_network_image: ^0.8.0
+  flutter_cache_manager: ^0.3.2
+  # dragable_flutter_list: ^1.0.2
+  shimmer: ^0.0.6
+  encrypt: ^3.2.0
+  flutter_svg: ^0.13.0+1
+  html: ^0.13.3+3
+  ntp: ^1.0.2
+  device_info: ^0.4.0+2
+  transparent_image: ^1.0.0
+  simple_moment: ^1.0.2
+  # pool: ^1.4.0
+  dots_indicator: ^0.0.5+1
+  # preload_page_view: ^0.1.4
+  permission_handler: ^3.1.0
+  flutter_mdns_plugin:
+    git:
+      url: https://github.com/NBTX/flutter_mdns_plugin.git
+      ref: master
+  dart_chromecast: ^0.1.0
+  carousel_slider: ^1.3.0
+
+  flare_flutter:
+    git:
+      url: git://github.com/2d-inc/Flare-Flutter.git
+      ref: dev
+      path: flare_flutter
+
+# Compile-only dependencies
+dev_dependencies:
+  flutter_launcher_icons: ^0.7.2
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/contributors.json
+
+    - assets/images/no_image_detail.jpg
+    - assets/images/header.png
+    - assets/images/header_text.png
+    - assets/images/header_text_dark.png
+    - assets/images/logo.png
+    - assets/images/logo_background.png
+    - assets/images/logo_foreground.png
+    - assets/images/logo_foreground_lg.png
+
+    - assets/icons/trakt.svg
+    - assets/icons/simkl.svg
+    - assets/icons/realdebrid.svg
+    - assets/icons/realdebrid-logo.png
+
+    - assets/flags/arab_league.png
+    - assets/flags/texas.png
+    - assets/flags/hebrew.png
+    - assets/flags/de.png
+    - assets/flags/es.png
+    - assets/flags/fi.png
+    - assets/flags/fr.png
+    - assets/flags/gb.png
+    - assets/flags/hi.png
+    - assets/flags/hr.png
+    - assets/flags/it.png
+    - assets/flags/nl.png
+    - assets/flags/pl.png
+    - assets/flags/pt.png
+    - assets/flags/ro.png
+    - assets/flags/ru.png
+    - assets/flags/sr.png
+    - assets/flags/sv.png
+    - assets/flags/tr.png
+    - assets/flags/us.png
+    - assets/flags/zh.png
+
+    - assets/genre/movie/Action.svg
+    - assets/genre/movie/Adventure.svg
+    - assets/genre/movie/Animation.svg
+    - assets/genre/movie/Comedy.svg
+    - assets/genre/movie/Crime.svg
+    - assets/genre/movie/Documentary.svg
+    - assets/genre/movie/Drama.svg
+    - assets/genre/movie/Family.svg
+    - assets/genre/movie/Fantasy.svg
+    - assets/genre/movie/History.svg
+    - assets/genre/movie/Horror.svg
+    - assets/genre/movie/Music.svg
+    - assets/genre/movie/Mystery.svg
+    - assets/genre/movie/Romance.svg
+    - assets/genre/movie/Science Fiction.svg
+    - assets/genre/movie/TV Movie.svg
+    - assets/genre/movie/Thriller.svg
+    - assets/genre/movie/War.svg
+    - assets/genre/movie/Western.svg
+
+    - assets/genre/tv/Action & Adventure.svg
+    - assets/genre/tv/Animation.svg
+    - assets/genre/tv/Comedy.svg
+    - assets/genre/tv/Crime.svg
+    - assets/genre/tv/Documentary.svg
+    - assets/genre/tv/Drama.svg
+    - assets/genre/tv/Family.svg
+    - assets/genre/tv/Kids.svg
+    - assets/genre/tv/Mystery.svg
+    - assets/genre/tv/News.svg
+    - assets/genre/tv/Reality.svg
+    - assets/genre/tv/Sci-Fi & Fantasy.svg
+    - assets/genre/tv/Soap.svg
+    - assets/genre/tv/Talk.svg
+    - assets/genre/tv/War & Politics.svg
+    - assets/genre/tv/Western.svg
+
+    - lib/res/loader.flr
+
+  fonts:
+    - family: GlacialIndifference
+      fonts:
+        - asset: fonts/GlacialIndifference-Regular.otf
+        - asset: fonts/GlacialIndifference-Bold.otf
+          weight: 700
+        - asset: fonts/GlacialIndifference-Italic.otf
+          style: italic
+    - family: apollotv-icons
+      fonts:
+        - asset: fonts/apollotv-icons.woff
+
+# Set app icons
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "images/logo.png"
+  image_path_android: "images/google.png"
+  image_path_ios: "images/apple.png"
+  adaptive_icon_background: "images/logo_background.png"
+  adaptive_icon_foreground: "images/logo_foreground.png"

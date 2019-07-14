@@ -1,0 +1,23 @@
+{
+  "$_language_name": "English (United Kingdom)",
+  "$_language_name_english": "English (United Kingdom)",
+
+  "removed_from_favorites": "Removed from favourites",
+  "added_to_favorites": "Added to favourites",
+  "favorites": "Favourites",
+  "you_can_now_tap_sync_to_synchronise_your_trakt_favorites": "You can now tap 'Sync' to synchronise your Trakt favourites with your ApolloTV favourites.\n\n(Trakt integration is limited as it is still in development.)",
+  "trakt_favorites_sync_detailed": "Please wait while we synchronize your favourites with Trakt. This dialog will close automatically when synchronization is complete.",
+  "removed_from_favorites": "Removed from favourites",
+  "added_to_favorites": "Added to favourites",
+  "appname_can_synchronise_your_watch_history_and_favorites_from_trakttv": "$appName can synchronise your watch history and favourites from Trakt.tv...",
+  "no_favorites_header": "No favourites here!",
+  "no_favorites_description": "You can add an item to favourites by tapping the heart on the top right of a content overview page.",
+  "uploading_favorites": "Uploading favourites...",
+
+
+  "customize_the_theme_and_primary_colors": "Customise the theme and primary colours.",
+  "customize_your_launchpad": "Customise your launchpad.",
+
+  "change_theme": "Change Theme...",
+  "set_primary_color": "Set Primary Colour..."
+}
